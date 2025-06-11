@@ -38,7 +38,15 @@
 	
 	<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"></noscript>
 <style>
-body{background-color:#f7f7f7;font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+body{background: hsla(0, 0%, 94%, 1);
+	
+	background: linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 97%, 1) 100%);
+	
+	background: -moz-linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 97%, 1) 100%);
+	
+	background: -webkit-linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 97%, 1) 100%);
+	
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F0F0F0", endColorstr="#F7F7F7", GradientType=1 );font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
 .heading h1{font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -47,11 +55,13 @@ body{background-color:#f7f7f7;font-family: Iowan Old Style, Apple Garamond, Bask
 	.heading {text-align:center;max-width:450px;margin:40px auto;}
 	.heading h1{
 	  text-transform:uppercase;letter-spacing:-0.05rem;font-size:2.5rem;}
+	.heading p{			font-style:italic;
+}
 	.heading a{
-			color:#4e77f6;
+			color:#324ea6;
 			transition:all .2s linear;
 		}		  
-		.heading a:hover{opacity:0.75}
+		.heading a:hover{color:#4e77f6}
 	.heading .logo svg{
 		height:150px;
 		width:auto;
@@ -89,7 +99,7 @@ body{background-color:#f7f7f7;font-family: Iowan Old Style, Apple Garamond, Bask
 			color: #aaa;font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
 		}
 		button{
-			background-color:#4e77f6;
+			background-color:#324ea6;
 			-webkit-appearance: none;
 			border:0;
 			outline:0;
@@ -107,7 +117,7 @@ body{background-color:#f7f7f7;font-family: Iowan Old Style, Apple Garamond, Bask
 			font-size:0.75rem;
 		}
 		button:hover{
-			background-color:#324ea6;
+			background-color:#4e77f6;
 		}
 		button svg{
 			width:19px;
