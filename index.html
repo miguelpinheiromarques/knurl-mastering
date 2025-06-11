@@ -40,20 +40,14 @@
 	
 	<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"></noscript>
 <style>
-body{	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
+body{font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);height:100vh;
 	letter-spacing: 0;background: hsla(0, 0%, 94%, 1);
-	
 	background: linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 97%, 1) 100%);
-	
 	background: -moz-linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 97%, 1) 100%);
-	
 	background: -webkit-linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 97%, 1) 100%);
+	font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
 	
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F0F0F0", endColorstr="#F7F7F7", GradientType=1 );font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
-.heading h1{font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;}
+	.heading h1{font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600; font-style: normal;min-height:100%}
 
 	.heading {text-align:center;max-width:450px;margin:40px auto;}
 	.heading h1{
@@ -63,7 +57,7 @@ body{	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
 			color:#324ea6;
 			transition:all .2s linear;
 		}		  
-		.heading a:hover{color:#4e77f6}
+	.heading a:hover{color:#4e77f6}
 	.heading .logo svg{
 		height:150px;
 		width:auto;
@@ -110,13 +104,11 @@ body{	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
 			transition:.2s;
 			color:#f9f9f9;
 			width:100%;
-			text-transform:lowercase;
 			letter-spacing: -0.011em;
 			word-spacing:-0.011em;
 			font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
-			font-weight:300;
-			font-style:italic;
-			font-size:0.75rem;
+			font-size:0.85rem;
+			padding:5px 0 5px 0;
 		}
 		button:hover{
 			background-color:#4e77f6;
