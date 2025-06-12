@@ -48,7 +48,7 @@
 			background: #f9f9f9;
 			font-family: "IBM Plex Serif", serif;
 		}
-		header,footer,section:not(.credits),.credits h2{
+		header,footer,section:not(.credits){
 			margin: 0 1rem;
 			@media screen and (min-width: 48em) {
 				 margin: 0 30%;
@@ -98,10 +98,16 @@
 			padding: 3px;
 			border-radius: 50%;
 		}
-		.credits{margin-top:40px;}
+		.credits{
+			margin-top:40px;
 			@media screen and (max-width: 48em) {
-				margin: 0 1rem;
+				margin: 40px 1rem 0 1rem;			
 			}	
+		}
+		.credits h2{
+			@media screen and (min-width: 48em) {
+			 margin: 0 30%;
+			}			
 		}
 		.credits .artwork {
 			width: 100%;
