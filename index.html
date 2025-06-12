@@ -104,7 +104,7 @@
 				margin: 40px 1rem 0 1rem;			
 			}	
 		}
-		.credits h2{
+		.credits h2, .credits h3{
 			@media screen and (min-width: 48em) {
 			 margin: 0 30%;
 			}			
@@ -114,15 +114,11 @@
 			margin:20px 0 0 0;
 			display: inline-flex;
 			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
 			align-items: flex-start;
 			align-content: flex-start;
-			@media screen and (min-width: 48em) {
-				justify-content: center;
-				align-items: stretch;
-				align-content: flex-start;				
-			}			
+			overflow-x:scroll;		
 		}
 		
 		.credits .artwork div {
@@ -133,7 +129,7 @@
 			box-shadow: 1px -1px 1px inset #f0f0f0;
 			box-shadow: 0px 0px 5px rgba(50,50,50,0.1);
 			transition: box-shadow .3s linear;
-			margin: 5px -1px;			
+			margin: 5px ;			
 	
 		}		
 		.credits .artwork div:hover{
@@ -148,6 +144,8 @@
 		.credits .artwork p{font-size:0.75rem;font-weight:300;font-style:italic;margin:0;padding:0 0 0 5px;}
 		.credits .artwork p span{display:block;font-style:normal;font-weight:400;text-transform:uppercase;font-size:0.5rem;margin-top:5px}
 
+		.credits h3{margin-top:20px;font-size:1rem;}
+		
 		.contact h2{margin-top:40px}
 		
 		.contact form {
@@ -278,15 +276,56 @@
 	</header>
 	<section class="credits">
 		<h2>Selected discography mastered by our engineers</h2>
+		<h3>Clara Araújo</h3>
 		<div class="artwork">
-				
-			
-			<div class="miguel"><img decoding="async"src="covers/mocky_music_will_explain.jpg" width="150px" loading="lazy" /><h3>Mocky - Music Will Explain</h3><p>mastering by Miguel Pinheiro Marques<span>June 2025</span></p></div>	
-			<div class="clara"><img src="covers/vaiapraia_alegria_terminal.jpg" width="150px" loading="lazy" /><h3>Vaiapraia - Alegria Terminal</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/asa_cobra_cobra_a_asa.jpg" width="150px" loading="lazy" /><h3>Asa Cobra - Asa à Cobra</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/bruno_ponte_making_a_toolbox.jpg" width="150px" loading="lazy" /><h3>Benji’s Toolbox - Making a toolbox</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/carolina_alabau_y_digo_no.jpg" width="150px" loading="lazy" /><h3>Carolina Alabau - Y Digo No</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
 			<div class="clara"><img src="covers/expresso_transatlantico_flor_trovao.jpg" width="150px" loading="lazy" /><h3>Expresso Transatlântico - Flor Trovão</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
-			<div class="clara"><img src="covers/carolina_alabau_y_digo_no.jpg" width="150px" loading="lazy" /><h3>Carolina Alabau - Y Digo No</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>			
-			<div class="clara"><img src="covers/bruno_ponte_making_a_toolbox.jpg" width="150px" loading="lazy" /><h3>Benji’s Toolbox - Making a toolbox</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>			
-			<div class=“clara”><img src="covers/asa_cobra_cobra_a_asa.jpg" width="150px" loading="lazy" /><h3>Asa Cobra - Asa à Cobra</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>				
+			<div class="clara"><img src="covers/vaiapraia_alegria_terminal.jpg" width="150px" loading="lazy" /><h3>Vaiapraia - Alegria Terminal</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/montro_live_for_tomorrow.jpg" width="150px" loading="lazy" /><h3>MONSTRO - Live For Tomorrow</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/lucena_pherrugem.jpg" width="150px" loading="lazy" /><h3>Lucena - Pherrugem</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/jupiter_portugues_suave.jpg" width="150px" loading="lazy" /><h3>Jupiter - Português Suave</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/carolina_alabau_la_perdiste.jpg" width="150px" loading="lazy" /><h3>Carolina Alabau - La Perdiste</h3><p>mastered by Clara Araújo<span>May 2025</span></p></div>
+			<div class="clara"><img src="covers/monstro_my_own_man.jpg" width="150px" loading="lazy" /><h3>MONSTRO - My Own Man</h3><p>mastered by Clara Araújo<span>February 2025</span></p></div>
+			<div class="clara"><img src="covers/lachado_irrequieto.jpg" width="150px" loading="lazy" /><h3>Lachado - Irrequieto</h3><p>mastered by Clara Araújo<span>February 2025</span></p></div>
+			<div class="clara"><img src="covers/astrodome_seascapes.jpg" width="150px" loading="lazy" /><h3>Astrodome - Seascapes</h3><p>mastered by Clara Araújo<span>October 2024</span></p></div>
+			<div class="clara"><img src="covers/lazaro_joao_vairinhos_colinas.jpg" width="150px" loading="lazy" /><h3>COLINAS - COLINAS</h3><p>mastered by Clara Araújo<span>October 2024</span></p></div>
+			<div class="clara"><img src="covers/cat_soup_you_only_180.jpg" width="150px" loading="lazy" /><h3>Cat Soup - You Only 180</h3><p>mastered by Clara Araújo<span>June 2024</span></p></div>
+			<div class="clara"><img src="covers/a_bigger_mouth_freedom_pass.jpg" width="150px" loading="lazy" /><h3>A Bigger Mouth - Freedom Pass</h3><p>mastered by Clara Araújo<span>May 2024</span></p></div>
+			<div class="clara"><img src="covers/sus_entre.jpg" width="150px" loading="lazy" /><h3>sús - Entre</h3><p>mastered by Clara Araújo<span>May 2024</span></p></div>
+			<div class="clara"><img src="covers/sunflowers_a_strange_feeling_of_existential_angst.jpg" width="150px" loading="lazy" /><h3>Sunflowers - A Strange Feeling of Existential Angst</h3><p>mastered by Clara Araújo<span>April 2024</span></p></div>
+			<div class="clara"><img src="covers/eduardo_cardinho_not_far_from_paradise.jpg" width="150px" loading="lazy" /><h3>Eduardo Cardinho - Not Far From Paradise</h3><p>mastered by Clara Araújo<span>April 2024</span></p></div>
+			<div class="clara"><img src="covers/rumours_lights.jpg" width="150px" loading="lazy" /><h3>Rumours - Lights</h3><p>mastered by Clara Araújo<span>March 2024</span></p></div>
+			<div class="clara"><img src="covers/rui_maio_cancoes_doutra_hora.jpg" width="150px" loading="lazy" /><h3>Rui Maio - Canções d’Outra Hora</h3><p>mastered by Clara Araújo<span>March 2024</span></p></div>
+			<div class="clara"><img src="covers/bilrus_i_just_want_to_be_david.jpg" width="150px" loading="lazy" /><h3>Bilrus - I Just Want To Be David</h3><p>mastered by Clara Araújo<span>February 2024</span></p></div>
+			<div class="clara"><img src="covers/marco_poingt_intuition.jpg" width="150px" loading="lazy" /><h3>Marco Poingt - Intuition</h3><p>mastered by Clara Araújo<span>December 2023</span></p></div>
+			<div class="clara"><img src="covers/miguel_pedro_sonofobia.jpg" width="150px" loading="lazy" /><h3>Miguel Pedro - Sonofobia</h3><p>mastered by Clara Araújo<span>December 2023</span></p></div>
+			<div class="clara"><img src="covers/luis_severo_incerteza.jpg" width="150px" loading="lazy" /><h3>Luís Severo - Incerteza</h3><p>mastered by Clara Araújo<span>December 2023</span></p></div>
+			<div class="clara"><img src="covers/luis_severo_cedo_ou_tarde.jpg" width="150px" loading="lazy" /><h3>Luís Severo - Cedo ou Tarde</h3><p>mastered by Clara Araújo<span>November 2023</span></p></div>
+			<div class="clara"><img src="covers/travo_astromorph_god.jpg" width="150px" loading="lazy" /><h3>Travo - Astromorph God</h3><p>mastered by Clara Araújo<span>November 2023</span></p></div>
+			<div class="clara"><img src="covers/du_nothin_matthews_departure.jpg" width="150px" loading="lazy" /><h3>Du Nothin - Matthews Departure</h3><p>mastered by Clara Araújo<span>October 2023</span></p></div>
+			<div class="clara"><img src="covers/gabriela_couto_podia_ser.jpg" width="150px" loading="lazy" /><h3>Gabriela Couto - Podia Ser</h3><p>mastered by Clara Araújo<span>April 2023</span></p></div>
+			<div class="clara"><img src="covers/filipe_keil_artificial.jpg" width="150px" loading="lazy" /><h3>Filipe Keil - Artificial</h3><p>mastered by Clara Araújo<span>May 2023</span></p></div>
+			<div class="clara"><img src="covers/luis_ribeiro_a_invencao_da_ficcao.jpg" width="150px" loading="lazy" /><h3>Luís Ribeiro - A Invenção da Ficção</h3><p>mastered by Clara Araújo<span>May 2023</span></p></div>
+			<div class="clara"><img src="covers/mia_moura_ausente.jpg" width="150px" loading="lazy" /><h3>Mia Moura - Ausente</h3><p>mastered by Clara Araújo<span>March 2023</span></p></div>
+			<div class="clara"><img src="covers/daisy_capital_hotel_fiasco.jpg" width="150px" loading="lazy" /><h3>Daisy Capital Hotel - Fiasco</h3><p>mastered by Clara Araújo<span>March 2023</span></p></div>
+			<div class="clara"><img src="covers/mike_vhiles_mystic_dream_sequence.jpg" width="150px" loading="lazy" /><h3>Mike Vhiles - Mystic Dream Sequence</h3><p>mastered by Clara Araújo<span>March 2023</span></p></div>
+			<div class="clara"><img src="covers/gator_the_alligator_laminar_flow.jpg" width="150px" loading="lazy" /><h3>Gator, The Alligator - Laminar Flow</h3><p>mastered by Clara Araújo<span>March 2023</span></p></div>
+			<div class="clara"><img src="covers/du_nothin_forever.jpg" width="150px" loading="lazy" /><h3>Du Nothin - Forever</h3><p>mastered by Clara Araújo<span>March 2023</span></p></div>
+			<div class="clara"><img src="covers/ghetthoven_magical_city.jpg" width="150px" loading="lazy" /><h3>Ghetthoven - Magical City</h3><p>mastered by Clara Araújo<span>February 2023</span></p></div>
+			<div class="clara"><img src="covers/luca_argel_sabina.jpg" width="150px" loading="lazy" /><h3>Luca Argel - Sabina</h3><p>mastered by Clara Araújo<span>February 2023</span></p></div>
+			<div class="clara"><img src="covers/fred_regina_guimaraes_maos_no_fogo.jpg" width="150px" loading="lazy" /><h3>FRED & Regina Guimarães - Mãos no Fogo</h3><p>mastered by Clara Araújo<span>January 2023</span></p></div>
+			<div class="clara"><img src="covers/aurea_volta.jpg" width="150px" loading="lazy" /><h3>Aurea - Volta</h3><p>mastered by Clara Araújo<span>November 2022</span></p></div>
+			<div class="clara"><img src="covers/monstero_schizoid.jpg" width="150px" loading="lazy" /><h3>Monstero - Schizoid</h3><p>mastered by Clara Araújo<span>November 2022</span></p></div>
+			<div class="clara"><img src="covers/sonia_pinto_repair.jpg" width="150px" loading="lazy" /><h3>Sónia Pinto - Repair</h3><p>mastered by Clara Araújo<span>November 2022</span></p></div>
+			<div class="clara"><img src="covers/luis_fernandes_a_guide_to_getting_lost.jpg" width="150px" loading="lazy" /><h3>Luís Fernandes - A Guide to Getting Lost</h3><p>mastered by Clara Araújo<span>September 2022</span></p></div>
+			<div class="clara"><img src="covers/solarek_piano_trio_henriette_bosmans.jpg" width="150px" loading="lazy" /><h3>Solarek Piano Trio - Henriëtte Bosmans</h3><p>mastered by Clara Araújo<span>August 2022</span></p></div>
+			<div class="clara"><img src="covers/do_acaso_catarse_civil.jpg" width="150px" loading="lazy" /><h3>Do Acaso - Catarse Civil</h3><p>mastered by Clara Araújo<span>July 2022</span></p></div>
+		</div>	
+		<h3>Miguel Pinheiro Marques</h3>
+		<div class="artwork">
+			<div class="miguel"><img decoding="async"src="covers/mocky_music_will_explain.jpg" width="150px" loading="lazy" /><h3>Mocky - Music Will Explain</h3><p>mastering by Miguel Pinheiro Marques<span>June 2025</span></p></div>			
 			<div class="miguel"><img decoding="async"src="covers/bombazine_apago_tudo.jpg" width="150px" loading="lazy" /><h3>Bombazine - Apago Tudo</h3><p>mastering by Miguel Pinheiro Marques<span>April 2025</span></p></div>		
 			<div class="miguel"><img decoding="async"src="covers/rui_reininho_ojm.jpg" width="150px" loading="lazy" /><h3>Rui Reininho & OJM - EP</h3><p>mastering by Miguel Pinheiro Marques<span>February 2025</span></p></div>	
 			<div class="miguel"><img decoding="async"src="covers/the_last_internationale_master.jpg" width="150px" loading="lazy" /><h3>The Last Internationale - Master</h3><p>mastering by Miguel Pinheiro Marques<span>January 2025</span></p></div>		
@@ -320,7 +359,7 @@
 			<div class="miguel"><img decoding="async"src="covers/ana_moura_moura_deluxe.jpg" width="150px" loading="lazy" /><h3>Ana Moura - Moura (Deluxe)</h3><p>mastering by Miguel Pinheiro Marques<span>November 2016</span></p></div>
 			<div class="miguel"><img decoding="async"src="covers/capitao_fausto_capitao_fausto_tem_os_dias_contados.jpg" width="150px" loading="lazy" /><h3>Capitão Fausto - Capitão Fausto Têm os Dias Contados</h3><p>mastering by Miguel Pinheiro Marques<span>April 2016</span></p></div>			
 			<div class="miguel"><img decoding="async"src="covers/filho_da_mae_mergulho.jpg" width="150px" loading="lazy" /><h3>Filho da Mãe - Mergulho</h3><p>mastering by Miguel Pinheiro Marques<span>March 2016</span></p></div>	
-			<div class="miguel"><img decoding="async"src="covers/diogo_piçarra_espelho.jpg" width="150px" loading="lazy" /><h3>Diogo Piçarra - Espelho</h3><p>mastering by Miguel Pinheiro Marques<span>March 2015</span></p></div>			
+			<div class="miguel"><img decoding="async"src="covers/diogo_piçarra_espelho.jpg" width="150px" loading="lazy" /><h3>Diogo Piçarra - Espelho</h3><p>mastering by Miguel Pinheiro Marques<span>March 2015</span></p></div>			
 			<div class="miguel"><img decoding="async"src="covers/tresporcento_quadro.jpg" width="150px" loading="lazy" /><h3>Trêsporcento - Quadro</h3><p>mastering by Miguel Pinheiro Marques<span>November 2012</span></p></div>		
 		</div>
 	</section>		
