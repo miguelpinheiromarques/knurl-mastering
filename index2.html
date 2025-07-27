@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Knurl Mastering</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #1b1b1b;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    section {
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .album-row {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .album-row::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .album-row::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+
+    .album {
+      flex: 0 0 auto;
+      width: 150px;
+      height: 150px;
+      background-color: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .album img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .album {
+        width: 100px;
+        height: 100px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Knurl Mastering</div>
+    <div class="description">
+      Knurl Mastering is a high-fidelity mastering studio dedicated to preserving sonic intent and enhancing musical impact. Run by engineers Miguel Pinheiro Marques and Clara Araújo, we bring clarity, depth, and energy to every record.
+    </div>
+  </header>
+
+  <section>
+    <h2>Miguel Pinheiro Marques</h2>
+    <div class="album-row">
+      <!-- Replace with real album art -->
+      <div class="album"><img src="https://via.placeholder.com/150" alt="Album 1" /></div>
+      <div class="album"><img src="https://via.placeholder.com/150" alt="Album 2" /></div>
+      <div class="album"><img src="https://via.placeholder.com/150" alt="Album 3" /></div>
+      <!-- Add more as needed up to 50 -->
+    </div>
+  </section>
+
+  <section>
+    <h2>Clara Araújo</h2>
+    <div class="album-row">
+      <!-- Replace with real album art -->
+      <div class="album"><img src="https://via.placeholder.com/150" alt="Album 1" /></div>
+      <div class="album"><img src="https://via.placeholder.com/150" alt="Album 2" /></div>
+      <div class="album"><img src="https://via.placeholder.com/150" alt="Album 3" /></div>
+      <!-- Add more as needed up to 50 -->
+    </div>
+  </section>
+
+</body>
+</html>
