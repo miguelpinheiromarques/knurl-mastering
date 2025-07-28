@@ -51,7 +51,10 @@
 			color:#fff;
 		}
 		header,footer,section:not(.credits){
-			padding: 0 1.5rem;
+			padding: 0 1rem;			
+			@media screen and (min-width: 48em) {
+			 padding: 0 1.5rem;
+			}				
 		}
 		h1 {
 			font-family: "Oswald", sans-serif;
@@ -106,22 +109,16 @@
 			background-color:#fff;
 		}
 
-		.credits{
-			margin-top:0;
-			@media screen and (max-width: 48em) {
-				margin: 0 0;			
-			}	
-		}
 		.credits h2{color:#181818;}
 		.credits .innercredits {background-color:#383838;}
 		.credits h2, .credits h3{
 			margin: 0 1rem;			
-			font-family: "Oswald", sans-serif;
-			font-optical-sizing: auto;
-			font-weight: 600;
 			@media screen and (min-width: 48em) {
 			 margin: 0 1.5rem;
-			}			
+			}				
+			font-family: "Oswald", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 600;		
 		}
 		.credits h3{font-size:1.2rem;font-weight:600;padding-top:20px;}
 
