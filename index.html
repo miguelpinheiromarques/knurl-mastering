@@ -54,7 +54,7 @@
 			padding: 0 1rem;			
 			@media screen and (min-width: 48em) {
 			 padding: 0 1.5rem;
-			}				
+			}			
 		}
 		h1 {
 			font-family: "Oswald", sans-serif;
@@ -81,11 +81,11 @@
 			background-color:#f7f7f7;
 			color:#181818;
 		}
-		.heading,.contact{max-width:500px;}
+		.heading,.contact,.studio div,.studio div img{max-width:500px;}
 		.heading p {
 			font-weight: 300;
 		}
-		.heading h1{margin:25px 0 0 0}
+		.heading h1{margin:30px 0 0 0}
 
 		.heading a {
 			color: #EDA40E;
@@ -110,6 +110,7 @@
 			background-color:#fff;
 		}
 
+		.credits{margin:0;padding:0}
 		.credits h2{color:#181818;padding-bottom:2px;}
 		.credits .innercredits {background-color:#383838;}
 		.credits h2, .credits h3{
@@ -120,7 +121,7 @@
 			font-optical-sizing: auto;
 			font-weight: 600;		
 		}
-		.credits h3{font-size:1.2rem;font-weight:600;padding-top:6px;}
+		.credits h3{font-size:1.2rem;font-weight:600;padding:4px 0 2px 0;}
 
 		.credits .artwork {
 			width: 100%;
@@ -153,6 +154,10 @@
 		.credits .artwork p span{display:block;font-style:normal;font-weight:400;text-transform:uppercase;font-size:0.5rem;margin:5px 0 0 0}
 		
 		.credits .artwork a{text-decoration:none;color:#fff;}
+
+		.studio{background-color:#fff;color:#181818;margin-top:-12px;}
+		.studio h2{padding-top:40px;}
+		.studio img{max-width:550px;padding-bottom:40px;}
 
 		.contact{background-color:#f7f7f7;margin:0;padding:0;}
 		.contact h2{padding-top:20px;color:#181818}
@@ -271,7 +276,7 @@
 					<circle cx="511.162" cy="399.563" r="22.442" style="fill:none;stroke:#000;stroke-width:8.35px" transform="matrix(1.19807 0 0 1.19807 -100.408 33.295)" />
 				</svg>
 			</div>
-			<div>
+			<div class="intro">
 				<h1>Knurl Mastering</h1>
 				<p>Knurl Mastering is a music mastering studio founded by engineers <a href="https://miguelpinheiromarques.com" target="_blank">Miguel Pinheiro Marques</a> and <a href="https://claramastering.com" target="_blank">Clara Araújo</a>, driven by a deep passion for records, sonics, and the pursuit of high fidelity.</p>
 			</div>
@@ -328,7 +333,7 @@
 		<div class="innercredits">
 		<h3>Clara Araújo</h3>
 		<div class="artwork">
-			<div class="clara"><img decoding="async" src="covers/asa_cobra_cobra_a_asa.jpg" loading="lazy" /><h3>Asa Cobra</h3><h4>Asa à Cobra</h4><p>mastering<span>May 2025</span></p></div>
+			<a href="https://music.apple.com/pt/album/music-will-explain-choir-music-vol-1/1799053835?l=en-GB" target="_blank"><div class="clara"><img decoding="async" src="covers/asa_cobra_cobra_a_asa.jpg" loading="lazy" /><h3>Asa Cobra</h3><h4>Asa à Cobra</h4><p>mastering<span>May 2025</span></p></div></a>
 			<div class="clara"><img decoding="async" src="covers/bruno_ponte_making_a_toolbox.jpg" loading="lazy" /><h3>Benji’s Toolbox</h3><h4>Making a toolbox</h4><p>mastering<span>May 2025</span></p></div>
 			<div class="clara"><img decoding="async" src="covers/carolina_alabau_y_digo_no.jpg" loading="lazy" /><h3>Carolina Alabau</h3><h4>Y Digo No</h4><p>mastering<span>May 2025</span></p></div>
 			<div class="clara"><img decoding="async" src="covers/expresso_transatlantico_flor_trovao.jpg" loading="lazy" /><h3>Expresso Transatlântico</h3><h4>Flor Trovão</h4><p>mastering<span>May 2025</span></p></div>
@@ -375,6 +380,12 @@
 		</div>
 	</div>
 	</section>		
+	<section class="studio">
+		<div>
+		<h2>About Knurl Mastering</h2>
+		<p>Knurl Mastering is a music mastering studio founded by engineers <a href="https://miguelpinheiromarques.com" target="_blank">Miguel Pinheiro Marques</a> and <a href="https://claramastering.com" target="_blank">Clara Araújo</a>, driven by a deep passion for records, sonics, and the pursuit of high fidelity.</p>
+		<img src="gyraf_f.jpg" /></div>
+	</section>
 	<section class="contact">
 		<h2>Get in touch with us</h2>
 		<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
