@@ -62,13 +62,14 @@
 			font-weight: 600;
 			font-style: normal;
 			text-transform: uppercase;
-			letter-spacing: -0.05rem;
+			letter-spacing: -1px;
 			padding-top:20px;
 			font-size: 2.75rem;
-			line-height:2.5rem;
+			line-height:2.4rem;
 			text-align: left;
 			word-spacing:100vw;
 		}
+		h1 span{letter-spacing: -1px;}
 		
 		h2{font-size:1rem;
 			font-optical-sizing: auto;
@@ -76,16 +77,22 @@
 
 		header {
 			text-align: left;
-			padding-top:40px;
+			padding-top:50px;
 			padding-bottom:40px;
 			background-color:#f7f7f7;
 			color:#181818;
 		}
-		.heading,.contact div,.studio div,.studio div img{max-width:500px;}
+		.heading,.contact div,.studio div{
+			width:100%;
+			@media screen and (min-width: 33em) {
+			max-width:33em;
+			}
+		}
 		.heading p {
 			font-weight: 300;
+			margin-top:40px;
 		}
-		.heading h1{margin:-114px 0 0 0}
+		.heading h1{margin:-108px 0 0 0}
 
 		.heading a {
 			color: #EDA40E;
@@ -103,10 +110,8 @@
 		}
 
 		.heading .logo svg {
-			height: 96px;
-			width: auto;
-			padding:3px;
-			border-radius:50%;
+			height: 92px;
+			width: 92px;
 		}
 
 		.credits{margin:0;padding:0;background-color:#f7f7f7}
@@ -143,7 +148,10 @@
 			width:150px;
 			height:150px;
 			text-align:left;
-			margin:0 5px 0 1.5rem;
+			margin: 0 0.25rem 0 1rem;			
+			@media screen and (min-width: 48em) {
+			 margin: 0 0.25rem 0 1.5rem;
+			}		
 		}		
 			
 		.credits .artwork img{width:150px;height:150px;object-fit: contain;margin:0;outline:1px solid #181818;outline-offset:-1px;box-shadow:0px 0px 5px #181818;}
@@ -155,7 +163,12 @@
 
 		.studio{background-color:#fff;color:#181818;margin-top:-14px;}
 		.studio h2{padding-top:80px;}
-		.studio img{max-width:550px;padding-bottom:80px;}
+		.studio img{
+			width: 100%;
+			height:auto;
+			border-bottom:8px solid #EDA40E;
+			margin:20px 0;
+		}
 
 		.contact{background-color:#f7f7f7;margin:0;padding:0;}
 		.contact h2{padding-top:20px;color:#181818}
@@ -165,7 +178,10 @@
 		}
 
 		.contact input {
-			width: 100%;
+			width: calc(100% - 0.5rem);
+			@media screen and (min-width: 48em) {
+				width: calc(100% - 0.75rem);
+			}
 			height: 30px;
 			margin: 4px 0 10px 0;
 			background: #f0f0f0;
@@ -177,7 +193,10 @@
 		}
 
 		.contact textarea {
-			width: 100%;
+			width: calc(100% - 0.5rem);
+			@media screen and (min-width: 48em) {
+				width: calc(100% - 0.75rem);
+			}
 			min-height: 200px;
 			margin: 3px 0 8px 0;
 			background: #f0f0f0;
@@ -202,7 +221,6 @@
 			border: 0;
 			outline: 0;
 			cursor: pointer;
-			border-radius: 0.5rem;
 			transition: .2s;
 			color: #fff;
 			width: 100%;
@@ -283,7 +301,7 @@
 				</svg>
 			</div>
 			<div class="intro">
-				<h1>Knurl Mastering</h1>
+				<h1>Knurl <span>Mastering</span></h1>
 				<p>Knurl Mastering is a music mastering studio founded by engineers <a href="https://miguelpinheiromarques.com" target="_blank">Miguel Pinheiro Marques</a> and <a href="https://claramastering.com" target="_blank">Clara Araújo</a>, driven by a deep respect for records, sonics, and the pursuit of high fidelity.</p>
 			</div>
 		</div>
@@ -389,7 +407,7 @@
 	<section class="studio">
 		<div>
 		<h2>About Knurl Mastering</h2>
-		<p>Our approach is rooted in a unique philosophy that blends precision in audio engineering with the organic and soul of music. We took inspiration in the discipline of industrial machining like the grip-perfect patterns of metal knurling done on a lathe, combined with the organic, unpredictable beauty of wood grain found in a natural knurl.</p>
+		<p>Our approach at Knurl Mastering combines precision and character, drawing inspiration from the crisp, crosshatched knurls cut on a lathe and the organic, unpredictable beauty of wood grain in a natural knurl. One is engineered through method, the other shaped by nature. That balance between technical control and artistic sensibility guides our practice, honoring both the science and the art of music.</p><p>Based in northern Portugal, we work with artists near and far, across all genres. Our setup blends analog precision with digital flexibility, allowing us to shape each track with intention.</p><p>We believe mastering is not just the final step but a craft in its own right.</p>
 		<img src="knurl_mastering_1.jpg" /></div>
 	</section>
 	<section class="contact">
