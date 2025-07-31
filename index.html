@@ -82,7 +82,7 @@
 			background-color:#f7f7f7;
 			color:#181818;
 		}
-		.heading,.contact div,.studio div{
+		.heading,.contact div,.studio div,.rates div{
 			width:100%;
 			@media screen and (min-width: 33em) {
 			max-width:33em;
@@ -110,8 +110,12 @@
 		}
 
 		.heading .logo svg {
-			height: 92px;
-			width: 92px;
+			height:95px;
+			width:95px;
+			@media screen and (min-width: 33em) {
+				height: 92px;
+				width: 92px;
+			}
 		}
 
 		.credits{margin:0;padding:0;background-color:#f7f7f7}
@@ -141,7 +145,7 @@
 			overflow-x:scroll;
 			overflow-y:hidden;	
 			background-color:#242424;
-			box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.1) inset, 0px -10px 5px -5px rgba(0,0,0,0.25) inset;
+			box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.15) inset, 0px -10px 5px -5px rgba(0,0,0,0.25) inset;
 			color:#fff;			
 		}
 		
@@ -170,6 +174,9 @@
 			border-bottom:8px solid #EDA40E;
 			margin:20px 0 40px 0;
 		}
+
+		.rates{background-color:#EDA40E;margin-top:-14px;}
+		.rates div{padding:40px 0}
 
 		.contact{background-color:#f7f7f7;margin:0;padding:0;}
 		.contact h2{padding-top:20px;color:#181818}
@@ -408,13 +415,14 @@
 	<section class="studio">
 		<div>
 		<h2>About Knurl Mastering</h2>
-		<p>Our approach at Knurl Mastering combines precision and character, drawing inspiration from the crisp, crosshatched knurls cut on a lathe and the organic, unpredictable beauty of wood grain in a natural knurl. One is engineered through method, the other shaped by nature. That balance between technical control and artistic sensibility guides our practice, honoring both the science and the art of music.</p><p>Based in northern Portugal, we work with artists near and far, across all genres. Our setup blends analog precision with digital flexibility, allowing us to shape each track with intention.</p><p>We believe mastering is not just the final step but a craft in its own right.</p>
-		<img src="knurl_mastering_1.jpg" /></div>
+		<p>Our name is inspired by the crisp, crosshatched knurls cut into metal on a lathe and the organic, unpredictable beauty of wood grain in a natural knurl. One is engineered with precision; the other shaped by nature. This balance between technical accuracy and artistic expression guides our practice, bridging the science and the art of recorded music.</p><p>From the coastal mountains of northern Portugal, we collaborate with artists both near and far, across genres and labels, from independent to major. Our studio setup combines analog precision with sonic flexibility, allowing us to create unique signal chains for each record and bring out the best in every album and song we work on.</p><p>We've mastered countless records for vinyl and are certified by Apple for the Apple Digital Masters program. Whether your music is headed to turntables or the latest digital streaming platforms, we'll deliver the right masters and guide you through the entire process.</p>
+		<img src="knurl_mastering_1.jpg" loading="lazy" /></div>
 	</section>
+
 	<section class="contact">
 		<div>
 		<h2>Get in touch with us</h2>
-		<p>If you'd like to discuss your project or need information about pricing, demo availability, and lead times, please get in touch with us. Fill out the form below, and we'll get back to you as soon as possible.</p>
+		<p>Whether you have a project in mind or simply want to learn more, we'd be happy to hear from you. If you'd like details on pricing, availability, or lead times, feel free to reach out below. We'll get back to you as soon as we can.</p>
 		<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
 			<input type="hidden" name="access_key" value="778e917c-c0da-4467-bc1d-9dfc0bdf938e" />
