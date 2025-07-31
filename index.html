@@ -51,7 +51,7 @@
 			font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
 			letter-spacing: 0;
 			background: #f7f7f7;
-  			font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 			margin:0;padding:0;
 			color:#fff;
 			font-weight:300;
@@ -275,7 +275,7 @@
 		
 		@media (prefers-color-scheme: dark) {
   body,.contact,.credits,header{background-color: #000000;color:#f0f0f0}
-		.heading .logo{}
+		.heading .logo{-webkit-filter: invert(100%);filter: invert(100%);}
 		.studio,.contact input,.contact textarea{background-color:#242424;color:#f0f0f0;}
 		.contact p{color:#f0f0f0}
 }
