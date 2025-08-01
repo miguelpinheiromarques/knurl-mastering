@@ -137,12 +137,12 @@
 			margin:0;
 			padding:20px 0 10px 0;
 			background-color:#f0f0f0;
-			box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.05) inset, 0px -10px 10px -10px rgba(0,0,0,0.05) inset;
+			box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.075) inset, 0px -10px 10px -10px rgba(0,0,0,0.075) inset;
 		}
-		.credits h2{color:#181818;padding-top:0;font-size:1.25rem;font-weight:300;}
+		.credits h2{color:#181818;padding-top:0px;font-size:1.25rem;font-weight:300;}
 		.credits .innercredits {
 			background-image: linear-gradient(to right, #383838, #363636, #353535, #333333, #323232);
-			border-top:5px solid #EDA40E;
+			border-top:4px solid #EDA40E;
 			margin:20px 0 40px 0
 		}
 		.credits h2, .credits h3{
@@ -152,7 +152,7 @@
 			}				
 			font-optical-sizing: auto;
 		}
-		.credits h3{font-size:1.1rem;font-weight:600;padding:4px 0;}
+		.credits h3{font-size:1.1rem;font-weight:600;padding:5px 0 4px 0;}
 
 		.credits .artwork {
 			width: 100%;
@@ -182,10 +182,11 @@
 			}		
 		}		
 			
-		.credits .artwork img{width:150px;height:150px;object-fit: contain;margin:0;outline:1px solid #181818;outline-offset:-1px;box-shadow:0px 0px 5px #181818;}
-		.credits .artwork h3{font-weight:300;margin:5px 0 0 0;padding:0;font-size:0.8rem;font-style:normal}
-		.credits .artwork h4{font-weight:600;margin:3px 0 0 0;padding:0;font-size:0.8rem;font-style:normal}
-		.credits .artwork p{font-size:0.7rem;font-weight:400;margin:2px 0 0 0;padding:0;color:#888}
+		.credits .artwork img{width:150px;height:150px;object-fit: contain;margin:0;outline:1px solid #181818;outline-offset:-1px;box-shadow:0px 0px 10px rgba(0,0,0,0.5);transition:all .1s linear;}
+		.credits .artwork a:hover img {outline-color:rgba(237,164,14,0.4)}
+		.credits .artwork h3{font-weight:300;padding:5px 0 0 0;margin:0;font-size:0.8rem;font-style:normal}
+		.credits .artwork h4{font-weight:600;padding:3px 0 0 0;margin:0;font-size:0.8rem;font-style:normal}
+		.credits .artwork p{font-size:0.7rem;font-weight:400;padding:2px 0 0 0;margin:0;color:#888}
 		.credits .artwork p span{display:block;font-style:normal;font-weight:400;text-transform:uppercase;font-size:0.5rem;margin:5px 0 0 0}
 		.credits .artwork a{text-decoration:none;color:#fff;}
 
@@ -194,14 +195,14 @@
 		.studio img{
 			width: 100%;
 			height:auto;
-			border-top:5px solid #EDA40E;
+			border-top:4px solid #EDA40E;
 			margin:20px 0 40px 0;
 		}
 
 		.contact{
 			background-color:#f7f7f7;
 			margin:-14px 0 0 0;
-			box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.05) inset;
+			box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.075) inset;
 		}
 		.contact h2{padding-top:40px;color:#181818}
 		.contact form {
