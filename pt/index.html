@@ -68,6 +68,15 @@
 			font-weight: 300;
 		}
 
+		::-moz-selection {
+			color: #fff;
+			background: #EDA40E;
+		}
+		::selection {
+			color: #fff;
+			background: #EDA40E;
+		}		
+
 		header,
 		footer,
 		section:not(.credits) {
@@ -306,16 +315,19 @@
 			padding-top: 40px;
 		}
 
+		.studio p:last-of-type{padding-bottom:60px}
+
 		.studio img {
 			width: 100%;
 			height: auto;
 			border-top: 4px solid #EDA40E;
 			margin: 20px 0 40px 0;
+			display:none;
 		}
 
 		.contact {
 			background-color: #f7f7f7;
-			margin: -14px 0 0 0;
+			margin: -16px 0 0 0;
 			box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.075) inset;
 		}
 
@@ -450,11 +462,11 @@
 			fill: #ff3040
 		}
 
-		.language p{margin:80px 0 0 0;font-weight: 600;background-color:#E0E0E0;border-radius:2px;padding:6px 10px;transition:background-color .2s linear;text-align:right}
+		.language p{margin:80px 0 0 0;font-weight: 600;background-color:#F0f0f0;border-radius:2px;padding:6px 10px;transition:background-color .2s linear;text-align:right}
 		.language p:hover{background-color:#E9E9E9}
 		.language a{color:#888;display:block;width:100%;font-weight:300;font-size:0.65rem;text-transform:uppercase}
 		.language svg{height:16px;width:16px;padding-right:5px;vertical-align:-30%;}
-		.language svg path{fill:#888}		
+		.language svg path{fill:#888}			
 
 		p.copyright,
 		p.knoll {
@@ -485,10 +497,12 @@
 
 			.credits,
 			.contact input,
-			.contact textarea {
+			.contact textarea,.language p{
 				background-color: #181818;
 				color: #f0f0f0
 			}
+			.language a{color:#f0f0f0}
+			.language svg path{fill:#f0f0f0}
 
 			.heading .logo svg path {
 				stroke: #f0f0f0;
@@ -519,7 +533,7 @@
 				filter: invert(100%)
 			}
 		}
-	</style>
+		</style>
 </head>
 
 <body>
