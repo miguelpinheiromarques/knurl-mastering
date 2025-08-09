@@ -19,6 +19,8 @@ body {
 }
 
 .heading p,
+.credits .artwork p,
+.credits .artwork p span,
 .studio p,
 .faq p,
 .faq ul,
@@ -239,7 +241,7 @@ a:hover {
 .credits .artwork p {
 	font-size: 0.7rem;
 	font-weight: 400;
-	padding: 2px 0 0 0;
+	padding: 3px 0 0 0;
 	margin: 0;
 	color: #888;
 	overflow: hidden;
@@ -253,7 +255,7 @@ a:hover {
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 0.5rem;
-	margin: 5px 0 0 0;
+	margin: 4px 0 0 0;
 }
 
 .credits .artwork a {
@@ -566,4 +568,75 @@ p.knoll {
 	p.social svg {
 		filter: invert(100%)
 	}
+}
+.tab {
+  position: relative;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+/* ✅ Change to match checkbox checked */
+.tab input:checked ~ .tab__content {
+  max-height: 20rem; /* adjust as needed */
+}
+
+.accordion {
+  color: #181818;
+  padding-bottom: 40px;
+}
+
+.tab__label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem 0;
+  border-bottom: 2px solid #EDA40E;
+  color: #181818;
+}
+
+/* Icon toggle */
+.tab__label::after {
+  content: "\276F"; /* right chevron */
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+  margin-right: 6px;
+}
+
+.tab__content {
+  background-color: transparent;
+}
+.tab__content li {
+  margin: 0;
+  padding: 0;
+}
+.tab__content p {
+  margin: 0;
+  padding: 0;
+}
+.tab__content p:first-of-type {
+  padding: 1rem 0;
+}
+.tab__content p:last-of-type {
+  padding: 0 0 1rem 0;
+}
+.tab__content p:not(:first-of-type):not(:last-of-type) {
+  padding-bottom: 1rem;
 }
