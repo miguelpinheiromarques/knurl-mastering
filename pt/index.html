@@ -27,7 +27,7 @@
 	<meta property="og:title"
 		content="Knurl Mastering - Estúdio de masterização fundado por Miguel Pinheiro Marques & Clara Araújo">
 	<meta property="og:description"
-		content="Knurl Mastering é um estúdio de masterização fundado por Miguel Pinheiro Marques e Clara Araújo. Temos uma obsessão por discos e fonogramas, e uma ambição enorme de revelar a melhor apresentação sónica de cada álbum e música que masterizamos.">
+		content="Knurl Mastering é um estúdio de masterização fundado por Miguel Pinheiro Marques e Clara Araújo. Nascido de uma ligação profunda aos discos, ao som e à música, procuramos realçar o melhor de cada canção e álbum que passa por nós.">
 	<meta property="og:image" content="https://knurlmastering.com/knurlmastering.jpg">
 	<meta property="og:image:width" content="1024">
 	<meta property="og:image:height" content="683">
@@ -37,7 +37,7 @@
 	<meta name="twitter:title"
 		content="Knurl Mastering - Estúdio de masterização fundado por Miguel Pinheiro Marques & Clara Araújo">
 	<meta name="twitter:description"
-		content="Knurl Mastering é um estúdio de masterização fundado por Miguel Pinheiro Marques e Clara Araújo. Temos uma obsessão por discos e fonogramas, e uma ambição enorme de revelar a melhor apresentação sónica de cada álbum e música que masterizamos.">
+		content="Knurl Mastering é um estúdio de masterização fundado por Miguel Pinheiro Marques e Clara Araújo. Nascido de uma ligação profunda aos discos, ao som e à música, procuramos realçar o melhor de cada canção e álbum que passa por nós.">
 	<meta name="twitter:image" content="https://knurlmastering.com/knurlmastering.jpg">
 
 	<style>
@@ -157,7 +157,7 @@
 		.credits {
 			margin: 0;
 			padding: 20px 0 10px 0;
-			background-color: #f0f0f0;
+			background-color: #f4f4f4;
 			box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.015) inset, 0px -10px 10px -10px rgba(0, 0, 0, 0.025) inset;
 		}
 
@@ -284,7 +284,7 @@
 		}
 
 		.studio {
-			background-color: #fff;
+			background-color: #f7f7f7;
 			color: #181818;
 			margin-top: -14px;
 		}
@@ -301,7 +301,7 @@
 		}
 
 		.contact {
-			background-color: #f7f7f7;
+			background-color: #f4f4f4;
 			margin: -16px 0 0 0;
 			box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.025) inset;
 		}
@@ -318,39 +318,36 @@
 
 		.contact input {
 			width: calc(100% - 0.5rem);
-
-			@media screen and (min-width: 48em) {
-				width: calc(100% - 0.75rem);
-			}
-
+			@media screen and (min-width: 48em) {width: calc(100% - 0.75rem);}
 			height: 30px;
 			margin: 4px 0 10px 0;
-			background: #f0f0f0;
+			background: #f7f7f7;
 			border: 0;
 			outline: 0;
 			padding: 0 0 0 10px;
 			color:#181818;
-			font-size:16px;
-			border-radius:2px;
+			border-left:2px solid #EDA40E;
+			font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
 		}
 
 		.contact textarea {
 			width: calc(100% - 0.5rem);
-
-			@media screen and (min-width: 48em) {
-				width: calc(100% - 0.75rem);
-			}
-
+			@media screen and (min-width: 48em) {width: calc(100% - 0.75rem);}
 			min-height: 200px;
 			margin: 3px 0 8px 0;
-			background: #f0f0f0;
+			background: #f7f7f7;
 			border: 0;
 			outline: 0;
 			resize: none;
 			padding: 10px 0 0 10px;
 			color:#181818;
-			font-size:16px;
-			border-radius:2px;
+			border-left:2px solid #EDA40E;
+			font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
+
+		}
+
+		@supports (-webkit-touch-callout: none) {
+  			.contact input,.contact textarea{font-size:16px;}
 		}
 
 		.contact input::placeholder,
@@ -438,11 +435,11 @@
 			fill: #ff3040
 		}
 
-		.language p{margin:80px 0 0 0;font-weight: 600;background-color:#f4f4f4;border:1px solid #f0f0f0;border-radius:2px;padding:6px 10px;transition:all .2s linear;text-align:right}
+		.language p{margin:80px 0 0 0;font-weight: 600;background-color:#f2f2f2;border-radius:2px;padding:6px 10px;transition:all .2s linear;text-align:right}
 		.language p:hover{background-color:#f0f0f0}
-		.language a{color:#888;display:block;width:100%;font-weight:300;font-size:0.65rem;text-transform:uppercase}
+		.language a{color:#999;display:block;width:100%;font-weight:400;font-size:0.65rem;text-transform:uppercase}
 		.language svg{height:16px;width:16px;padding-right:5px;vertical-align:-30%;}
-		.language svg path{fill:#888}		
+		.language svg path{fill:#999}		
 
 		p.copyright,
 		p.knoll {
@@ -453,14 +450,16 @@
 
 		p.copyright {
 			margin-top: 25px;
-			color: #888
+			color: #999;
+			text-align:right;
 		}
 
 		p.knoll {
 			text-transform: uppercase;
 			font-size: 0.5rem;
 			font-weight: 600;
-			padding: 20px 0 40px 0
+			padding: 40px 0;
+			text-align:right;
 		}
 
 		@media (prefers-color-scheme: dark) {
@@ -1577,7 +1576,7 @@
 	<section class="studio">
 		<div>
 			<h2>Sobre o Knurl Mastering</h2>
-			<p>O nome Knurl nasce de dois elementos distintos mas complementares: dos padrões geométricos gravados em metal, também conhecido como <i>knurling</i>; e dos veios e nós orgânicos da madeira, ou <i>knurls</i>. Um é moldado com rigor técnico; o outro, pela mão da natureza. Este equilíbrio entre precisão técnica e sensibilidade estética orienta o nossa trabalho, unindo a ciência e a arte da masterização áudio.</p>
+			<p>O nome Knurl nasce de dois elementos distintos mas complementares: os padrões geométricos gravados em metal, também conhecido como <i>knurling</i>; e os veios e nós orgânicos da madeira, ou <i>knurls</i>. Um é moldado com rigor técnico; o outro, pela mão da natureza. Este equilíbrio entre precisão técnica e sensibilidade estética orienta o nosso trabalho, unindo a ciência e a arte da masterização áudio.</p>
 			<p>A partir das Serras do Porto, colaboramos com artistas de diferentes estilos e origens, da música independente ao comercial, do local ao internacional. O nosso estúdio combina a precisão do analógico com a flexibilidade do digital, permitindo-nos criar cadeias de sinal à medida de cada disco e explorar todo o potencial sonoro de cada faixa. Entre equipamento a válvulas, transformadores e ferramentas digitais de alta resolução, temos liberdade para trabalhar o som com detalhe, cor e clareza.</p>
 			<p>Contamos com uma vasta experiência a masterizar para vinil e integramos a lista oficial da Apple no programa Apple Digital Masters. Seja para prensagem em vinil ou lançamento nas plataformas digitais, garantimos os masters certos para cada formato e acompanhamos o processo até à fase final.</p>
 			<br/>
