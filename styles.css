@@ -321,10 +321,9 @@ a:hover {
 	outline: 0;
 	padding: 0 0 0 10px;
 	color:#181818;
-	border-left:2px solid #EDA40E;
+	border:1px solid #e0e0e0;
 	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
 }
-
 .contact textarea {
 	width: calc(100% - 0.5rem);
 
@@ -340,7 +339,7 @@ a:hover {
 	resize: none;
 	padding: 10px 0 0 10px;
 	color:#181818;
-	border-left:2px solid #EDA40E;
+	border:1px solid #e0e0e0;
 	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
 
 }
@@ -497,8 +496,77 @@ p.knoll {
 	text-align: right;
 }
 
-@media (prefers-color-scheme: dark) {
+.tab {
+  position: relative;
+}
 
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.tab input:checked ~ .tab__content {
+  max-height: 30rem;
+}
+
+.accordion {
+  color: #181818;
+  padding-bottom: 40px;
+}
+
+.tab__label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem 0;
+  border-bottom: 2px solid #EDA40E;
+  color: #181818;
+}
+
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+  margin-right: 6px;
+}
+
+.tab__content {
+  background-color: transparent;
+}
+.tab__content li {
+  margin: 0;
+  padding: 0;
+}
+.tab__content p {
+  margin: 0;
+  padding: 0;
+}
+.tab__content p:first-of-type {
+  padding: 1rem 0;
+}
+.tab__content p:last-of-type {
+  padding: 0 0 1rem 0;
+}
+.tab__content p:not(:first-of-type):not(:last-of-type) {
+  padding-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
 	body,
 	.studio,
 	header {
@@ -568,75 +636,5 @@ p.knoll {
 	p.social svg {
 		filter: invert(100%)
 	}
-}
-.tab {
-  position: relative;
-}
-
-.tab input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-.tab__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.35s ease;
-}
-
-/* ✅ Change to match checkbox checked */
-.tab input:checked ~ .tab__content {
-  max-height: 20rem; /* adjust as needed */
-}
-
-.accordion {
-  color: #181818;
-  padding-bottom: 40px;
-}
-
-.tab__label {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  font-weight: 600;
-  padding: 1rem 0;
-  border-bottom: 2px solid #EDA40E;
-  color: #181818;
-}
-
-/* Icon toggle */
-.tab__label::after {
-  content: "\276F"; /* right chevron */
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  transform: rotate(90deg);
-  transition: all 0.35s;
-}
-
-.tab input:checked + .tab__label::after {
-  transform: rotate(270deg);
-  margin-right: 6px;
-}
-
-.tab__content {
-  background-color: transparent;
-}
-.tab__content li {
-  margin: 0;
-  padding: 0;
-}
-.tab__content p {
-  margin: 0;
-  padding: 0;
-}
-.tab__content p:first-of-type {
-  padding: 1rem 0;
-}
-.tab__content p:last-of-type {
-  padding: 0 0 1rem 0;
-}
-.tab__content p:not(:first-of-type):not(:last-of-type) {
-  padding-bottom: 1rem;
+	.tab__label, .tab__content p, .tab__content ul, .tab__content li{color:#f0f0f0}
 }
