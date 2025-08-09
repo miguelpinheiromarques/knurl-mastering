@@ -10,11 +10,11 @@ html {
 }
 
 body {
+	background: #f7f7f7;
+	color: #fff;	
 	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
 	letter-spacing: 0;
-	background: #f7f7f7;
 	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color: #fff;
 	font-weight: 300;
 }
 
@@ -323,6 +323,9 @@ a:hover {
 	color:#181818;
 	border:1px solid #e0e0e0;
 	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
+	letter-spacing: 0;
+	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 300;
 }
 .contact textarea {
 	width: calc(100% - 0.5rem);
@@ -341,7 +344,9 @@ a:hover {
 	color:#181818;
 	border:1px solid #e0e0e0;
 	font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
-
+	letter-spacing: 0;
+	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 300;
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -513,7 +518,7 @@ p.knoll {
 }
 
 .tab input:checked ~ .tab__content {
-  max-height: 30rem;
+  max-height: 40rem;
 }
 
 .accordion {
