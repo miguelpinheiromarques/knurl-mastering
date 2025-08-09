@@ -21,6 +21,8 @@ body {
 .heading p,
 .studio p,
 .faq p,
+.faq ul,
+.faq li,
 .contact p {
 	font-weight: 400;
 	line-height: 125%;
@@ -57,8 +59,8 @@ h2 {
 	font-weight: 600;
 }
 
-h3{
-    font-size:1rem;
+h3 {
+	font-size: 1rem;
 }
 
 header {
@@ -87,11 +89,17 @@ header {
 }
 
 .heading h1 {
-	margin: -85px 0 0 0
+	margin: -86px 0 0 0;
+	@media screen and (min-width: 33em) {
+		margin: -85px 0 0 0;
+	}
 }
 
 .heading h1 svg {
-	width: 187px;
+	width:178px;
+	@media screen and (min-width: 33em) {
+		width: 184px;
+	}
 }
 
 .heading h1 svg path {
@@ -118,8 +126,8 @@ a:hover {
 }
 
 .heading .logo svg {
-	height: 95px;
-	width: 95px;
+	height: 90px;
+	width: 90px;
 
 	@media screen and (min-width: 33em) {
 		height: 92px;
@@ -151,7 +159,11 @@ a:hover {
 
 .credits h3 {
 	margin: 0 1rem;
-	@media screen and (min-width: 48em) {margin: 0 1.5rem;}
+
+	@media screen and (min-width: 48em) {
+		margin: 0 1.5rem;
+	}
+
 	font-optical-sizing: auto;
 	font-size: 1.1rem;
 	font-weight: 600;
@@ -332,6 +344,7 @@ a:hover {
 }
 
 @supports (-webkit-touch-callout: none) {
+
 	.contact input,
 	.contact textarea {
 		font-size: 16px;
@@ -483,6 +496,7 @@ p.knoll {
 }
 
 @media (prefers-color-scheme: dark) {
+
 	body,
 	.studio,
 	header {
