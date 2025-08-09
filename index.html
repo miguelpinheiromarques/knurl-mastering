@@ -2,15 +2,19 @@
 <html lang='en-US'>
 
 <head>
-	<title>Knurl Mastering - Music mastering studio founded by engineers Miguel Pinheiro Marques and Clara Araújo</title>
+	<title>Knurl Mastering - Music mastering studio founded by engineers Miguel Pinheiro Marques and Clara Araújo
+	</title>
 	<meta charset='utf-8'>
-	<meta name="description" content="Knurl Mastering is a music mastering studio founded by engineers Miguel Pinheiro Marques and Clara Araújo, driven by a deep respect for records, sonics, and the pursuit of high fidelity.">
+	<meta name="description"
+		content="Knurl Mastering is a music mastering studio founded by engineers Miguel Pinheiro Marques and Clara Araújo, driven by a deep respect for records, sonics, and the pursuit of high fidelity.">
 	<meta name="keywords"
 		content="mastering engineer, mastering studio, audio mastering, mastering services, professional mastering, mastered audio, music production, song mastering, recording and mastering studio, mixing and mastering, vinyl mastering, CD mastering, digital mastering, online mastering service, audio engineering, high-quality mastering, mastering techniques, single mastering, mastering service for artists, audio studio, audio mastering expert, audio mastering Portugal, mastering process, audio finalization, digital mastering, sound productions, exclusive for musicians, mastering customization, professional mastering for bands, miguel pinheiro marques, sistemas e técnicas de produção áudio, Apple Digital Masters, Mastered For iTunes, Bender Mastering Studio, Estúdios Sá da Bandeira, Arda Recorders">
 	<meta name="author" content="Knurl Mastering">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<meta name="theme-color" content="#383838" />
+
+	<link rel="preload" href="styles.css" as="style">
 
 	<link rel="canonical" hreflang="en-US" href="https://knurlmastering.com/" />
 	<link rel="alternate" hreflang="en-US" href="https://knurlmastering.com/" />
@@ -39,480 +43,8 @@
 	<meta name="twitter:description"
 		content="Knurl Mastering is a music mastering studio founded by engineers Miguel Pinheiro Marques and Clara Araújo, driven by a deep respect for records, sonics, and the pursuit of high fidelity.">
 	<meta name="twitter:image" content="https://knurlmastering.com/knurlmastering.jpg">
-
-	<style>
-		html,
-		body {
-			margin: 0;
-			padding: 0;
-		}
-
-		html {
-			scroll-behavior: smooth;
-			color-scheme: light dark;
-		}
-
-		body {
-			font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
-			letter-spacing: 0;
-			background: #f7f7f7;
-			font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-			color: #fff;
-			font-weight: 300;
-		}
-
-		::-moz-selection {
-			color: #fff;
-			background: #EDA40E;
-		}
-		::selection {
-			color: #fff;
-			background: #EDA40E;
-		}		
-
-		header,
-		footer,
-		section:not(.credits) {
-			padding: 0 1rem;
-
-			@media screen and (min-width: 48em) {
-				padding: 0 1.5rem;
-			}
-		}
-
-		h2 {
-			font-size: 1rem;
-			font-optical-sizing: auto;
-			font-weight: 600;
-		}
-
-		header {
-			text-align: left;
-			padding-top: 50px;
-			padding-bottom: 40px;
-			background-color: #f7f7f7;
-			color: #181818;
-		}
-
-		.heading,
-		.contact div,
-		.studio div,
-		.rates div {
-			width: 100%;
-			@media screen and (min-width: 33em) {
-				max-width: 33em;
-				width: 33em;
-				margin: 0 auto;
-			}
-		}
-
-		.heading p {
-			margin-top: 40px;
-		}
-
-		.heading h1 {
-			margin: -85px 0 0 0
-		}
-		.heading h1 svg{width:187px;}
-		.heading h1 svg path{fill:#181818}
-
-		a {
-			color: #EDA40E;
-			transition: all .2s linear;
-			text-decoration: none;
-			font-weight: 600;
-		}
-
-		a:hover {
-			color: #E6C16A;
-		}
-
-		.heading a {
-			white-space: nowrap;
-		}
-
-		.heading .logo {
-			text-align: right;
-		}
-
-		.heading .logo svg {
-			height: 95px;
-			width: 95px;
-
-			@media screen and (min-width: 33em) {
-				height: 92px;
-				width: 92px;
-			}
-		}
-
-		.heading .logo svg path {
-			stroke: #383838;
-			fill: #383838;
-		}
-
-		.heading .logo svg circle {
-			stroke: #383838;
-		}
-
-		.credits {
-			margin: 0;
-			padding: 20px 0 10px 0;
-			background-color: #f4f4f4;
-			box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.015) inset, 0px -10px 10px -10px rgba(0, 0, 0, 0.025) inset;
-		}
-
-		.credits h2 {
-			color: #181818;
-			padding-top: 0px;
-			font-size: 1.25rem;
-			font-weight: 300;
-		}
-
-		.credits .innercredits {
-			background-image: linear-gradient(to right, #383838, #363636, #353535, #333333, #323232);
-			border-top: 4px solid #EDA40E;
-			margin: 20px 0 40px 0
-		}
-
-		.credits h2,
-		.credits h3 {
-			margin: 0 1rem;
-
-			@media screen and (min-width: 48em) {
-				margin: 0 1.5rem;
-			}
-
-			font-optical-sizing: auto;
-		}
-
-		.credits h3 {
-			font-size: 1.1rem;
-			font-weight: 600;
-			padding: 5px 0 4px 0;
-		}
-
-		.credits .artwork {
-			width: 100%;
-			height: 190px;
-			margin: 0 0 0 0;
-			padding: 30px 0 60px 0;
-			display: inline-flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			justify-content: flex-start;
-			align-items: flex-start;
-			align-content: flex-start;
-			overflow-x: scroll;
-			overflow-y: hidden;
-			background-color: #242424;
-			box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.15) inset, 0px -10px 10px -10px rgba(0, 0, 0, 0.25) inset;
-			color: #fff;
-		}
-
-		.credits .artwork div {
-			width: 150px;
-			height: 150px;
-			text-align: left;
-			margin: 0 0.25rem 0 1rem;
-
-			@media screen and (min-width: 48em) {
-				margin: 0 0.25rem 0 1.5rem;
-			}
-		}
-
-		.credits .artwork img {
-			width: 150px;
-			height: 150px;
-			object-fit: contain;
-			margin: 0;
-			outline: 1px solid #181818;
-			outline-offset: -1px;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-			transition: all .1s linear;
-		}
-
-		.credits .artwork a:hover img {
-			outline-color: rgba(237, 164, 14, 0.4)
-		}
-
-		.credits .artwork h3 {
-			font-weight: 300;
-			padding: 5px 0 0 0;
-			margin: 0;
-			font-size: 0.8rem;
-			font-style: normal;
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-		}
-
-		.credits .artwork h4 {
-			font-weight: 600;
-			padding: 3px 0 0 0;
-			margin: 0;
-			font-size: 0.8rem;
-			font-style: normal;
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;			
-		}
-
-		.credits .artwork p {
-			font-size: 0.7rem;
-			font-weight: 400;
-			padding: 2px 0 0 0;
-			margin: 0;
-			color: #888;
-						overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-		}
-
-		.credits .artwork p span {
-			display: block;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: uppercase;
-			font-size: 0.5rem;
-			margin: 5px 0 0 0;
-		}
-
-		.credits .artwork a {
-			text-decoration: none;
-			color: #fff;
-			cursor:pointer;
-		}
-
-		.studio {
-			background-color: #f7f7f7;
-			color: #181818;
-			margin-top: -14px;
-		}
-
-		.studio h2 {
-			padding-top: 40px;
-		}
-
-		.studio img {
-			width: 100%;
-			height: auto;
-			border-top: 4px solid #EDA40E;
-			margin: 20px 0 40px 0;
-		}
-
-		.contact {
-			background-color: #f4f4f4;
-			margin: -16px 0 0 0;
-			box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.025) inset;
-		}
-
-		.contact h2 {
-			padding-top: 40px;
-			color: #181818
-		}
-
-		.contact form {
-			margin: 0;
-			padding: 0 0 20px 0;
-		}
-
-		.contact input {
-			width: calc(100% - 0.5rem);
-			@media screen and (min-width: 48em) {width: calc(100% - 0.75rem);}
-			height: 30px;
-			margin: 4px 0 10px 0;
-			background: #f7f7f7;
-			border: 0;
-			outline: 0;
-			padding: 0 0 0 10px;
-			color:#181818;
-			border-left:2px solid #EDA40E;
-			font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
-		}
-
-		.contact textarea {
-			width: calc(100% - 0.5rem);
-			@media screen and (min-width: 48em) {width: calc(100% - 0.75rem);}
-			min-height: 200px;
-			margin: 3px 0 8px 0;
-			background: #f7f7f7;
-			border: 0;
-			outline: 0;
-			resize: none;
-			padding: 10px 0 0 10px;
-			color:#181818;
-			border-left:2px solid #EDA40E;
-			font-size: clamp(0.95rem, 1.095rem + -0.227vw, 1.05rem);
-
-		}
-
-		@supports (-webkit-touch-callout: none) {
-  			.contact input,.contact textarea{font-size:16px;}
-		}
-
-		.contact input::placeholder,
-		.contact textarea::placeholder {
-			color: #aaa;
-			font-size: 0.8rem;
-			font-weight: 300;
-		}
-
-		.contact button {
-			background-color: #EDA40E;
-			-webkit-appearance: none;
-			border: 0;
-			outline: 0;
-			cursor: pointer;
-			transition: .2s;
-			color: #fff;
-			width: 100%;
-			letter-spacing: -0.011em;
-			word-spacing: -0.011em;
-			font-size: 0.85rem;
-			padding: 5px 0;
-			border-radius: 2px;
-		}
-
-		.contact button:hover {
-			box-shadow: 0 0 1px #EDA40E;
-		}
-
-		.contact .thankyou{
-			display: none;
-		}
-		.contact .thankyou p{color: #fff;
-			background-color: #EDA40E;
-			border-radius: 2px;
-			text-align: center;
-			letter-spacing: -0.011em;
-			word-spacing: -0.011em;
-			font-size: 0.85rem;
-			padding: 5px 0;
-			margin: 20px 0;
-			width:100%;}
-
-		.contact .thankyou p svg,
-		.form-submit svg {
-			height: 18px;
-			width: 18px;
-			line-height: 18px;
-			vertical-align: -20%;
-			padding-right: 9px;
-		}
-
-		.contact .thankyou svg path,
-		.form-submit svg path {
-			fill: #fff
-		}
-
-		.contact #thankyou:target {
-			display: block;
-		}
-
-		.contact p {
-			color: #181818
-		}
-
-		p.social {
-			padding-bottom: 20px;
-		}
-
-		p.social svg {
-			height: 18px;
-			width: 18px;
-			margin-right: 9px;
-		}
-
-		a.facebook:hover svg path {
-			fill: #1877F2
-		}
-
-		a.instagram:hover svg path {
-			fill: #E4405F
-		}
-
-		a.threads:hover svg path {
-			fill: #ff3040
-		}
-
-		.language p{margin:80px 0 0 0;font-weight: 600;background-color:#f2f2f2;border-radius:2px;padding:6px 10px;transition:all .2s linear;text-align:right}
-		.language p:hover{background-color:#f0f0f0}
-		.language a{color:#999;display:block;width:100%;font-weight:400;font-size:0.65rem;text-transform:uppercase}
-		.language svg{height:16px;width:16px;padding-right:5px;vertical-align:-30%;}
-		.language svg path{fill:#999}		
-
-		p.copyright,
-		p.knoll {
-			font-size: 0.75rem;
-			padding: 0;
-			margin: 0
-		}
-
-		p.copyright {
-			margin-top: 25px;
-			color: #999;
-			text-align:right;
-		}
-
-		p.knoll {
-			text-transform: uppercase;
-			font-size: 0.5rem;
-			font-weight: 600;
-			padding: 40px 0;
-			text-align:right;
-		}
-
-		@media (prefers-color-scheme: dark) {
-			body,
-			.studio,
-			header {
-				background-color: #000000;
-				color: #f0f0f0
-			}
-
-			.credits,
-			.contact input,
-			.contact textarea{
-				background-color: #181818;
-				color: #f0f0f0
-			}
-			.language p{border:1px solid #282828;background-color:#222}
-			.language p:hover{background-color:#282828;border:1px solid #181818}
-			.language a{color:#f0f0f0}
-			.language svg path{fill:#f0f0f0}
-
-			.heading .logo svg path {
-				stroke: #f0f0f0;
-				stroke-width: 3;
-				fill: #f0f0f0;
-			}
-
-			.heading .logo svg circle {
-				stroke: #f0f0f0;
-				stroke-width: 10;
-				fill: none
-			}
-
-			.heading h1 svg path{fill:#f0f0f0}			
-
-			.contact {
-				background-color: #242424;
-				color: #f0f0f0;
-			}
-
-			h1,
-			.credits h2,
-			.contact h2,
-			.credits h3,
-			.contact p {
-				color: #f0f0f0
-			}
-
-			p.social svg {
-				filter: invert(100%)
-			}
-		}
-		</style>
+	
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -549,8 +81,16 @@
 				</svg>
 			</div>
 			<div class="intro">
-				<h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 534 213"><g fill-rule="evenodd"><path d="M270.158 103.223V.919h22.607v87.022h23.492v15.282Zm-70.729 0V.919h28.165c6.905 0 12.883.758 17.935 2.274 5.052 1.515 8.988 4.23 11.809 8.146 2.82 3.916 4.231 9.452 4.231 16.609 0 4.21-.337 7.957-1.01 11.24-.674 3.284-1.916 6.126-3.726 8.526-1.81 2.4-4.4 4.4-7.768 6l14.02 49.509h-23.366l-11.24-45.847h-6.442v45.847Zm22.608-58.856h6.315c3.2 0 5.683-.569 7.452-1.705 1.768-1.137 3.01-2.779 3.726-4.926.715-2.147 1.073-4.736 1.073-7.767 0-4.379-.8-7.789-2.4-10.23-1.6-2.443-4.546-3.664-8.84-3.664h-7.326Zm-62.266 60.372c-7.831 0-13.957-1.284-18.377-3.853-4.42-2.568-7.515-6.315-9.283-11.24-1.769-4.926-2.653-10.967-2.653-18.124V.919h22.356v74.013c0 2.105.168 4.21.505 6.315.337 2.105 1.073 3.83 2.21 5.178 1.137 1.347 2.884 2.02 5.242 2.02 2.441 0 4.21-.673 5.304-2.02 1.095-1.347 1.79-3.073 2.084-5.178a45.49 45.49 0 0 0 .442-6.315V.919h22.482v70.603c0 7.157-.905 13.198-2.716 18.124-1.81 4.925-4.904 8.672-9.283 11.24-4.378 2.569-10.483 3.853-18.313 3.853Zm-94.095-1.516V.919H81.59l20.966 49.258V.919h18.693v102.304h-15.283L85 50.177v53.046Zm-65.297 0V.919h22.608v41.806L40.164.919h22.102L43.321 47.145l19.83 56.078H40.163L25.386 58.007l-2.4 4.042v41.174ZM501.288 212.796c-7.073 0-12.651-1.473-16.735-4.42-4.084-2.948-6.988-7.094-8.715-12.441-1.726-5.347-2.589-11.515-2.589-18.503v-34.354c0-7.241.926-13.514 2.779-18.819 1.852-5.305 5.03-9.41 9.536-12.314 4.504-2.905 10.63-4.358 18.376-4.358 7.578 0 13.536 1.263 17.872 3.79 4.336 2.525 7.43 6.02 9.283 10.482 1.853 4.463 2.779 9.683 2.779 15.662v6.567H511.77v-8.335c0-2.19-.147-4.21-.442-6.063-.295-1.852-.968-3.347-2.02-4.484-1.053-1.136-2.758-1.705-5.116-1.705-2.442 0-4.21.653-5.305 1.958-1.094 1.305-1.789 2.926-2.084 4.863a40.274 40.274 0 0 0-.442 6.062v47.363c0 2.273.232 4.4.695 6.378.463 1.979 1.305 3.579 2.526 4.8 1.22 1.22 2.968 1.83 5.241 1.83 2.358 0 4.168-.63 5.431-1.894 1.263-1.263 2.148-2.905 2.653-4.925.505-2.021.758-4.168.758-6.442v-11.998h-9.22v-13.262H534v53.046h-14.904l-1.263-8.462c-1.347 2.863-3.325 5.242-5.936 7.136-2.61 1.895-6.146 2.842-10.609 2.842Zm-91.82-1.516V108.977h15.913l20.966 49.257v-49.257h18.693V211.28h-15.283l-20.966-53.046v53.046Zm-32.207 0V108.977h22.607V211.28Zm-70.224 0V108.977h28.165c6.905 0 12.883.758 17.935 2.273 5.052 1.516 8.989 4.231 11.81 8.147 2.82 3.915 4.23 9.451 4.23 16.608 0 4.21-.336 7.957-1.01 11.24-.674 3.285-1.916 6.126-3.726 8.526-1.81 2.4-4.4 4.4-7.767 6l14.019 49.51h-23.366l-11.24-45.848h-6.442v45.847Zm22.608-58.856h6.315c3.2 0 5.684-.568 7.452-1.705 1.768-1.137 3.01-2.778 3.726-4.926.716-2.147 1.073-4.736 1.073-7.767 0-4.379-.8-7.789-2.4-10.23-1.6-2.442-4.546-3.663-8.84-3.663h-7.326Zm-73.38 58.856V108.977h45.973v15.408h-23.366v25.387h17.809v15.661h-17.809v30.565h23.619v15.282Zm-177.58 0L98.01 108.977h25.766l19.071 102.303h-20.84l-3.41-21.597h-15.03l-3.536 21.597Zm26.903-35.111h10.861l-5.43-39.911ZM0 211.28l1.768-102.303h24.25l11.24 59.487 12.126-59.487h23.365l1.768 102.303h-16.04l-1.894-68.076L44.71 211.28H30.439l-12.63-68.58-1.516 68.58Zm157.623-1.894c4.295 2.273 9.641 3.41 16.04 3.41 5.474 0 10.21-1.137 14.21-3.41 4-2.274 7.093-5.368 9.283-9.283 2.189-3.916 3.283-8.273 3.283-13.072 0-7.073-1.536-13.01-4.61-17.809-3.073-4.8-6.84-9.093-11.303-12.882l-8.463-7.452c-2.947-2.61-5.325-5.115-7.136-7.515-1.81-2.4-2.715-5.494-2.715-9.283 0-1.768.484-3.537 1.452-5.305.969-1.768 2.505-2.652 4.61-2.652 1.937 0 3.368.61 4.295 1.831.926 1.221 1.536 2.947 1.831 5.179.295 2.23.484 4.862.568 7.893l19.45-2.4c-.084-3.03-.441-6.21-1.073-9.535a30.022 30.022 0 0 0-3.536-9.473c-1.726-2.989-4.252-5.41-7.578-7.262-3.326-1.852-7.726-2.779-13.199-2.779-8.84 0-15.83 2.295-20.966 6.884-5.136 4.589-7.704 11.22-7.704 19.892 0 6.147 1.326 11.304 3.978 15.472 2.653 4.168 5.915 7.894 9.789 11.178l8.84 7.704c3.453 2.947 6.19 5.873 8.21 8.778 2.021 2.905 3.031 6.462 3.031 10.672 0 1.769-.357 3.453-1.073 5.052-.716 1.6-2.252 2.4-4.61 2.4-1.852 0-3.431-.59-4.736-1.768-1.305-1.179-2.316-3.115-3.032-5.81-.715-2.694-1.115-6.23-1.2-10.61l-19.323 2.906c.252 7.578 1.473 13.745 3.662 18.503 2.19 4.757 5.431 8.272 9.725 10.546Zm57.341-83.611v85.505h22.734v-85.505h15.283v-16.798h-53.426v16.798h15.409Z"/></g></svg></h1>
-				<p>Knurl Mastering is a music mastering studio founded by engineers <a href="https://miguelpinheiromarques.com" target="_blank" hreflang="en">Miguel Pinheiro Marques</a> and <a href="https://claramastering.com" target="_blank" hreflang="en">Clara Araújo</a>, driven by a deep respect for records, sonics, and the pursuit of high fidelity.</p>
+				<h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 534 213">
+						<g fill-rule="evenodd">
+							<path
+								d="M270.158 103.223V.919h22.607v87.022h23.492v15.282Zm-70.729 0V.919h28.165c6.905 0 12.883.758 17.935 2.274 5.052 1.515 8.988 4.23 11.809 8.146 2.82 3.916 4.231 9.452 4.231 16.609 0 4.21-.337 7.957-1.01 11.24-.674 3.284-1.916 6.126-3.726 8.526-1.81 2.4-4.4 4.4-7.768 6l14.02 49.509h-23.366l-11.24-45.847h-6.442v45.847Zm22.608-58.856h6.315c3.2 0 5.683-.569 7.452-1.705 1.768-1.137 3.01-2.779 3.726-4.926.715-2.147 1.073-4.736 1.073-7.767 0-4.379-.8-7.789-2.4-10.23-1.6-2.443-4.546-3.664-8.84-3.664h-7.326Zm-62.266 60.372c-7.831 0-13.957-1.284-18.377-3.853-4.42-2.568-7.515-6.315-9.283-11.24-1.769-4.926-2.653-10.967-2.653-18.124V.919h22.356v74.013c0 2.105.168 4.21.505 6.315.337 2.105 1.073 3.83 2.21 5.178 1.137 1.347 2.884 2.02 5.242 2.02 2.441 0 4.21-.673 5.304-2.02 1.095-1.347 1.79-3.073 2.084-5.178a45.49 45.49 0 0 0 .442-6.315V.919h22.482v70.603c0 7.157-.905 13.198-2.716 18.124-1.81 4.925-4.904 8.672-9.283 11.24-4.378 2.569-10.483 3.853-18.313 3.853Zm-94.095-1.516V.919H81.59l20.966 49.258V.919h18.693v102.304h-15.283L85 50.177v53.046Zm-65.297 0V.919h22.608v41.806L40.164.919h22.102L43.321 47.145l19.83 56.078H40.163L25.386 58.007l-2.4 4.042v41.174ZM501.288 212.796c-7.073 0-12.651-1.473-16.735-4.42-4.084-2.948-6.988-7.094-8.715-12.441-1.726-5.347-2.589-11.515-2.589-18.503v-34.354c0-7.241.926-13.514 2.779-18.819 1.852-5.305 5.03-9.41 9.536-12.314 4.504-2.905 10.63-4.358 18.376-4.358 7.578 0 13.536 1.263 17.872 3.79 4.336 2.525 7.43 6.02 9.283 10.482 1.853 4.463 2.779 9.683 2.779 15.662v6.567H511.77v-8.335c0-2.19-.147-4.21-.442-6.063-.295-1.852-.968-3.347-2.02-4.484-1.053-1.136-2.758-1.705-5.116-1.705-2.442 0-4.21.653-5.305 1.958-1.094 1.305-1.789 2.926-2.084 4.863a40.274 40.274 0 0 0-.442 6.062v47.363c0 2.273.232 4.4.695 6.378.463 1.979 1.305 3.579 2.526 4.8 1.22 1.22 2.968 1.83 5.241 1.83 2.358 0 4.168-.63 5.431-1.894 1.263-1.263 2.148-2.905 2.653-4.925.505-2.021.758-4.168.758-6.442v-11.998h-9.22v-13.262H534v53.046h-14.904l-1.263-8.462c-1.347 2.863-3.325 5.242-5.936 7.136-2.61 1.895-6.146 2.842-10.609 2.842Zm-91.82-1.516V108.977h15.913l20.966 49.257v-49.257h18.693V211.28h-15.283l-20.966-53.046v53.046Zm-32.207 0V108.977h22.607V211.28Zm-70.224 0V108.977h28.165c6.905 0 12.883.758 17.935 2.273 5.052 1.516 8.989 4.231 11.81 8.147 2.82 3.915 4.23 9.451 4.23 16.608 0 4.21-.336 7.957-1.01 11.24-.674 3.285-1.916 6.126-3.726 8.526-1.81 2.4-4.4 4.4-7.767 6l14.019 49.51h-23.366l-11.24-45.848h-6.442v45.847Zm22.608-58.856h6.315c3.2 0 5.684-.568 7.452-1.705 1.768-1.137 3.01-2.778 3.726-4.926.716-2.147 1.073-4.736 1.073-7.767 0-4.379-.8-7.789-2.4-10.23-1.6-2.442-4.546-3.663-8.84-3.663h-7.326Zm-73.38 58.856V108.977h45.973v15.408h-23.366v25.387h17.809v15.661h-17.809v30.565h23.619v15.282Zm-177.58 0L98.01 108.977h25.766l19.071 102.303h-20.84l-3.41-21.597h-15.03l-3.536 21.597Zm26.903-35.111h10.861l-5.43-39.911ZM0 211.28l1.768-102.303h24.25l11.24 59.487 12.126-59.487h23.365l1.768 102.303h-16.04l-1.894-68.076L44.71 211.28H30.439l-12.63-68.58-1.516 68.58Zm157.623-1.894c4.295 2.273 9.641 3.41 16.04 3.41 5.474 0 10.21-1.137 14.21-3.41 4-2.274 7.093-5.368 9.283-9.283 2.189-3.916 3.283-8.273 3.283-13.072 0-7.073-1.536-13.01-4.61-17.809-3.073-4.8-6.84-9.093-11.303-12.882l-8.463-7.452c-2.947-2.61-5.325-5.115-7.136-7.515-1.81-2.4-2.715-5.494-2.715-9.283 0-1.768.484-3.537 1.452-5.305.969-1.768 2.505-2.652 4.61-2.652 1.937 0 3.368.61 4.295 1.831.926 1.221 1.536 2.947 1.831 5.179.295 2.23.484 4.862.568 7.893l19.45-2.4c-.084-3.03-.441-6.21-1.073-9.535a30.022 30.022 0 0 0-3.536-9.473c-1.726-2.989-4.252-5.41-7.578-7.262-3.326-1.852-7.726-2.779-13.199-2.779-8.84 0-15.83 2.295-20.966 6.884-5.136 4.589-7.704 11.22-7.704 19.892 0 6.147 1.326 11.304 3.978 15.472 2.653 4.168 5.915 7.894 9.789 11.178l8.84 7.704c3.453 2.947 6.19 5.873 8.21 8.778 2.021 2.905 3.031 6.462 3.031 10.672 0 1.769-.357 3.453-1.073 5.052-.716 1.6-2.252 2.4-4.61 2.4-1.852 0-3.431-.59-4.736-1.768-1.305-1.179-2.316-3.115-3.032-5.81-.715-2.694-1.115-6.23-1.2-10.61l-19.323 2.906c.252 7.578 1.473 13.745 3.662 18.503 2.19 4.757 5.431 8.272 9.725 10.546Zm57.341-83.611v85.505h22.734v-85.505h15.283v-16.798h-53.426v16.798h15.409Z" />
+						</g>
+					</svg></h1>
+				<p>Knurl Mastering is a music mastering studio founded by engineers <a
+						href="https://miguelpinheiromarques.com" target="_blank" hreflang="en">Miguel Pinheiro
+						Marques</a> and <a href="https://claramastering.com" target="_blank" hreflang="en">Clara
+						Araújo</a>, driven by a deep respect for records, sonics, and the pursuit of high fidelity.</p>
 			</div>
 			<p class="social">
 				<a href="https://threads.com/knurlmastering" target="_blank" class="threads"><svg
@@ -646,26 +186,29 @@
 					</div>
 				</a>
 				<a href="https://music.apple.com/pt/album/master-single/1826868870?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/the_last_internationale_master.jpg" loading="lazy" />
+					<div class="miguel"><img decoding="async" src="covers/the_last_internationale_master.jpg"
+							loading="lazy" />
 						<h3>The Last Internationale</h3>
 						<h4>Master</h4>
 						<p>digital mastering<span>January 2025</span></p>
 					</div>
 				</a>
 				<a href="https://music.apple.com/pt/album/viva-la-muerte/1787916570?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/mao_morta_viva_la_muerte.jpg" loading="lazy" />
+					<div class="miguel"><img decoding="async" src="covers/mao_morta_viva_la_muerte.jpg"
+							loading="lazy" />
 						<h3>Mão Morta</h3>
 						<h4>Viva La Muerte</h4>
 						<p>digital mastering<span>January 2025</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/first-christmas-single/1778570159?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/diane_keaton_first_christmas.jpg" loading="lazy" />
+					<div class="miguel"><img decoding="async" src="covers/diane_keaton_first_christmas.jpg"
+							loading="lazy" />
 						<h3>Diane Keaton</h3>
 						<h4>First Christmas</h4>
 						<p>digital mastering<span>November 2024</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/samba-celta/1827233813?l=en-GB" target="_blank">
 					<div class="miguel"><img decoding="async" src="covers/bombazine_samba_celta.jpg" loading="lazy" />
 						<h3>Bombazine</h3>
@@ -686,7 +229,7 @@
 						<h4>I - EP</h4>
 						<p>digital mastering<span>October 2024</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/tradi%C3%A7%C3%A3o-single/1772131322?l=en-GB" target="_blank">
 					<div class="miguel"><img decoding="async" src="covers/spedro_tradicao.jpg" loading="lazy" />
 						<h3>S. Pedro</h3>
@@ -694,21 +237,25 @@
 						<p>digital mastering<span>October 2024</span></p>
 					</div>
 				</a>
-				<a href="https://music.apple.com/pt/album/raining-the-fire/1774169902?i=1774169905&l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/call_of_duty_black_ops_6.jpg" loading="lazy" />
+				<a href="https://music.apple.com/pt/album/raining-the-fire/1774169902?i=1774169905&l=en-GB"
+					target="_blank">
+					<div class="miguel"><img decoding="async" src="covers/call_of_duty_black_ops_6.jpg"
+							loading="lazy" />
 						<h3>Call of Duty Black Ops 6</h3>
 						<h4>Raining the Fire</h4>
 						<p>digital mastering<span>October 2024</span></p>
 					</div>
 				</a>
-				<a href="https://music.apple.com/pt/album/no-c%C3%A9u-da-boca-do-lobo/1772765476?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/virgem_suta_no_ceu_da_boca_do_lobo.jpg" loading="lazy" />
+				<a href="https://music.apple.com/pt/album/no-c%C3%A9u-da-boca-do-lobo/1772765476?l=en-GB"
+					target="_blank">
+					<div class="miguel"><img decoding="async" src="covers/virgem_suta_no_ceu_da_boca_do_lobo.jpg"
+							loading="lazy" />
 						<h3>Virgem Suta</h3>
 						<h4>No céu da boca do lobo</h4>
 						<p>vinyl & digital mastering<span>October 2024</span></p>
 					</div>
-				</a>				
-				<a href="https://music.apple.com/pt/album/e-n%C3%B3s-in%C3%B3spita/1767397490?l=en-GB target="_blank">
+				</a>
+				<a href="https://music.apple.com/pt/album/e-n%C3%B3s-in%C3%B3spita/1767397490?l=en-GB target=" _blank">
 					<div class="miguel"><img decoding="async" src="covers/inospita_e_nos.jpg" loading="lazy" />
 						<h3>Inóspita</h3>
 						<h4>E Nós, Inóspita?</h4>
@@ -716,19 +263,22 @@
 					</div>
 				</a>
 				<a href="https://music.apple.com/pt/album/real-life-is-overrated/1738039721?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/wolf_manhattan_real_life_is_overrated.jpg" loading="lazy" />
+					<div class="miguel"><img decoding="async" src="covers/wolf_manhattan_real_life_is_overrated.jpg"
+							loading="lazy" />
 						<h3>Wolf Manhattan</h3>
 						<h4>Real Life Is Overrated</h4>
 						<p>vinyl & digital mastering<span>April 2024</span></p>
 					</div>
 				</a>
-				<a href="https://music.apple.com/pt/album/abaixo-das-ra%C3%ADzes-deste-jardim/1820362289?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/evaya_abaixo_das_raizes_deste_jardim.jpg" loading="lazy" />
+				<a href="https://music.apple.com/pt/album/abaixo-das-ra%C3%ADzes-deste-jardim/1820362289?l=en-GB"
+					target="_blank">
+					<div class="miguel"><img decoding="async" src="covers/evaya_abaixo_das_raizes_deste_jardim.jpg"
+							loading="lazy" />
 						<h3>EVAYA</h3>
 						<h4>Abaixo das Raízes Deste Jardim</h4>
 						<p>vinyl & digital mastering<span>April 2024</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/m%C3%BAsicas-brasileiras-m%C3%BAsicos-portugueses/1735752446?l=en-GB"
 					target="_blank">
 					<div class="miguel"><img decoding="async"
@@ -751,14 +301,14 @@
 						<h4>Casta Brava</h4>
 						<p>digital mastering<span>March 2024</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/everywhen/1726588382?l=en-GB" target="_blank">
 					<div class="miguel"><img decoding="async" src="covers/best_youth_everywhen.jpg" loading="lazy" />
 						<h3>Best Youth</h3>
 						<h4>Everywhen</h4>
 						<p>vinyl & digital mastering<span>January 2024</span></p>
 					</div>
-				</a>			
+				</a>
 				<a href="https://music.apple.com/pt/album/contigo-single/1715884189?l=en-GB" target="_blank">
 					<div class="miguel"><img decoding="async" src="covers/fernado_daniel_contigo.jpg" loading="lazy" />
 						<h3>Fernando Daniel</h3>
@@ -767,12 +317,13 @@
 					</div>
 				</a>
 				<a href="https://music.apple.com/pt/album/p%C3%B3s-esmeralda/1700889351?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/conferencia_inferno_pos_esmeralda.jpg" loading="lazy" />
+					<div class="miguel"><img decoding="async" src="covers/conferencia_inferno_pos_esmeralda.jpg"
+							loading="lazy" />
 						<h3>Conferência Inferno</h3>
 						<h4>Pós-Esmeralda</h4>
 						<p>digital mastering<span>September 2023</span></p>
 					</div>
-				</a>					
+				</a>
 				<a href="https://music.apple.com/pt/album/esperava-mais-de-ti-single/1690719955?l=en-GB"
 					target="_blank">
 					<div class="miguel"><img decoding="async"
@@ -826,7 +377,7 @@
 						<h4>Id - EP</h4>
 						<p>digital mastering<span>May 2023</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/g%C3%B3tico-portugu%C3%AAs/1668146197?l=en-GB"
 					target="_blank">
 					<div class="miguel"><img decoding="async" src="covers/glockenwise_gotico_portugues.jpg"
@@ -897,12 +448,13 @@
 					</div>
 				</a>
 				<a href="https://music.apple.com/pt/album/crashes-n-crushes/1597370941?l=en-GB" target="_blank">
-					<div class="miguel"><img decoding="async" src="covers/barbara_eugenia_crashes_n_crushes.jpg" loading="lazy" />
+					<div class="miguel"><img decoding="async" src="covers/barbara_eugenia_crashes_n_crushes.jpg"
+							loading="lazy" />
 						<h3>Bárbara Eugénia</h3>
 						<h4>Crashes n' Crushes</h4>
 						<p>digital mastering<span>December 2021</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/manoel/1585033197?l=en-GB" target="_blank">
 					<div class="miguel"><img decoding="async" src="covers/sensible_soccers_manoel.jpg" loading="lazy" />
 						<h3>Sensible Soccers</h3>
@@ -1154,7 +706,7 @@
 						<h4>Arqueologia</h4>
 						<p>digital mastering<span>September 2015</span></p>
 					</div>
-				</a>				
+				</a>
 				<a href="https://music.apple.com/pt/album/espelho-edi%C3%A7%C3%A3o-especial/1442679110?l=en-GB"
 					target="_blank">
 					<div class="miguel"><img decoding="async" src="covers/diogo_picarra_espelho.jpg" loading="lazy" />
@@ -1590,12 +1142,47 @@
 				genres and labels, from independent to major. Our studio setup combines analog precision with sonic
 				flexibility, allowing us to create unique signal chains for each record and bring out the best in every
 				album and song we work on.</p>
-			<p>We've mastered countless records for vinyl and we're on Apple's list of certified partners for the Apple Digital Masters
+			<p>We've mastered countless records for vinyl and we're on Apple's list of certified partners for the Apple
+				Digital Masters
 				program. Whether your music is headed to turntables or the latest digital streaming platforms, we'll
 				deliver the right masters for each and guide you through the entire process.</p>
-				<br/>
+			<br />
 			<!--<img src="../knurlmastering_vs_gyraf.jpg" loading="lazy" />-->
 		</div>
+	</section>
+
+	<section class="faq">
+		<div>
+			<h2>FAQ</h2>
+			<div class="question">
+				<h3>What formats do you accept? What are the deliverables?</h3>
+				<p>We accept all standard audio formats up to 768kHz and 32-bit, including native playback of DSD files. Whether you're working with WAV, AIFF, FLAC, or DSD, we've got you covered.</p>
+				<p>Our standard deliverables include:<ul><li>High-resolution masters at 96kHz/24bit for digital distribution</li>
+					<li>Audio for video at 48kHz/24bit</li>
+					<li>DDP image files for CD manufacturing</li>
+					<li>Vinyl pre-master files tailored to your pressing plant's specifications</li></ul></p>
+				<p>Other formats or custom deliverables can be provided upon request, just let us know what you need.</p>
+			</div>
+			<div class="question">
+				<h3>How much does it cost?</h3>
+				<p>Our mastering rates typically range from €40 to €80 per track (or $50 to $100 USD), depending on the length and complexity of the record.</p>
+				<p>For full albums or longer projects, we'll provide a tailored quote based on the total number of tracks and the overall duration.</p>
+				<p>All standard deliverables (high-resolution files, DDP for CD, vinyl pre-masters, etc.) are included in the price. There are no hidden fees or extra charges for different formats.</p>
+				<p>Feel free to get in touch with your project details, and we'll be happy to send you a precise quote.</p>
+			</div>
+			<div class="question">
+				<h3>What's the turaround times?</h3>
+				<p>We typically deliver the first version of your mastered track or record within 2-3 business days after receiving all the necessary files.</p>
+				<p>If revisions are needed, we usually turn those around in 1-2 business days, depending on the scope of the changes. We'll keep working closely with you until you’re fully satisfied and the final masters are approved.</p>
+				<p>If you're on a tight deadline, just let us know and we'll do our best to accommodate.</p>
+			</div>
+			<div class="question">
+				<h3>Can I attend a session?</h3>
+				<p>Absolutely! While most of our sessions are handled remotely (clients send us their files, and we deliver the masters for review) we're happy to have you attend the session in person or virtually, as long as it's booked in advance.</p>
+				<p>Just let us know your preference when scheduling, and we'll make the necessary arrangements.</p>
+			</div>
+		</div>
+		<br />
 	</section>
 
 	<section class="contact">
@@ -1630,16 +1217,24 @@
 					</svg> Send message</button>
 			</form>
 
-			<div id="thankyou" class="thankyou"><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-					fill="#1f1f1f" viewBox="0 -960 960 960">
-					<path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z" />
-				</svg> Message sent, thanks for getting in touch.</p></div>
+			<div id="thankyou" class="thankyou">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f1f1f"
+						viewBox="0 -960 960 960">
+						<path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z" />
+					</svg> Message sent, thanks for getting in touch.</p>
+			</div>
 
 
-			<div class="language"><p><a href="pt/index.html" hreflang="pt-PT">Português <svg xmlns="http://www.w3.org/2000/svg" fill="#1f1f1f" viewBox="0 -960 960 960"><path d="M480-120q-74.31 0-140-28.42-65.69-28.43-114.42-77.16-48.73-48.73-77.16-114.42Q120-405.69 120-480q0-74.54 28.42-140.12 28.43-65.57 77.16-114.3 48.73-48.73 114.42-77.16Q405.69-840 480-840q74.54 0 140.12 28.42 65.57 28.43 114.3 77.16 48.73 48.73 77.16 114.3Q840-554.54 840-480q0 74.31-28.42 140-28.43 65.69-77.16 114.42-48.73 48.73-114.3 77.16Q554.54-120 480-120Zm0-39.69q35.23-45.23 58.08-88.85 22.84-43.61 37.15-97.61H384.77q15.85 57.07 37.92 100.69 22.08 43.61 57.31 85.77Zm-50.92-6q-28-33-51.12-81.58-23.11-48.58-34.42-98.88H190.15q34.39 74.61 97.5 122.38 63.12 47.77 141.43 58.08Zm101.84 0q78.31-10.31 141.43-58.08 63.11-47.77 97.5-122.38H616.46q-15.15 51.07-38.27 99.65-23.11 48.58-47.27 80.81ZM173.85-386.15h161.38q-4.54-24.62-6.42-47.97-1.89-23.34-1.89-45.88 0-22.54 1.89-45.88 1.88-23.35 6.42-47.97H173.85q-6.54 20.77-10.2 45.27Q160-504.08 160-480t3.65 48.58q3.66 24.5 10.2 45.27Zm201.38 0h209.54q4.54-24.62 6.42-47.2 1.89-22.57 1.89-46.65t-1.89-46.65q-1.88-22.58-6.42-47.2H375.23q-4.54 24.62-6.42 47.2-1.89 22.57-1.89 46.65t1.89 46.65q1.88 22.58 6.42 47.2Zm249.54 0h161.38q6.54-20.77 10.2-45.27Q800-455.92 800-480t-3.65-48.58q-3.66-24.5-10.2-45.27H624.77q4.54 24.62 6.42 47.97 1.89 23.34 1.89 45.88 0 22.54-1.89 45.88-1.88 23.35-6.42 47.97Zm-8.31-227.7h153.39Q734.69-690 673.5-736.23q-61.19-46.23-142.58-58.85 28 36.85 50.35 84.27 22.35 47.43 35.19 96.96Zm-231.69 0h190.46q-15.85-56.3-39.08-101.84-23.23-45.54-56.15-84.62-32.92 39.08-56.15 84.62-23.23 45.54-39.08 101.84Zm-194.62 0h153.39q12.84-49.53 35.19-96.96 22.35-47.42 50.35-84.27-82.16 12.62-142.96 59.23-60.81 46.62-95.97 122Z"/></svg></a></p></div>				
+			<div class="language">
+				<p><a href="pt/index.html" hreflang="pt-PT"><svg xmlns="http://www.w3.org/2000/svg"
+							fill="#1f1f1f" viewBox="0 -960 960 960">
+							<path
+								d="M480-120q-74.31 0-140-28.42-65.69-28.43-114.42-77.16-48.73-48.73-77.16-114.42Q120-405.69 120-480q0-74.54 28.42-140.12 28.43-65.57 77.16-114.3 48.73-48.73 114.42-77.16Q405.69-840 480-840q74.54 0 140.12 28.42 65.57 28.43 114.3 77.16 48.73 48.73 77.16 114.3Q840-554.54 840-480q0 74.31-28.42 140-28.43 65.69-77.16 114.42-48.73 48.73-114.3 77.16Q554.54-120 480-120Zm0-39.69q35.23-45.23 58.08-88.85 22.84-43.61 37.15-97.61H384.77q15.85 57.07 37.92 100.69 22.08 43.61 57.31 85.77Zm-50.92-6q-28-33-51.12-81.58-23.11-48.58-34.42-98.88H190.15q34.39 74.61 97.5 122.38 63.12 47.77 141.43 58.08Zm101.84 0q78.31-10.31 141.43-58.08 63.11-47.77 97.5-122.38H616.46q-15.15 51.07-38.27 99.65-23.11 48.58-47.27 80.81ZM173.85-386.15h161.38q-4.54-24.62-6.42-47.97-1.89-23.34-1.89-45.88 0-22.54 1.89-45.88 1.88-23.35 6.42-47.97H173.85q-6.54 20.77-10.2 45.27Q160-504.08 160-480t3.65 48.58q3.66 24.5 10.2 45.27Zm201.38 0h209.54q4.54-24.62 6.42-47.2 1.89-22.57 1.89-46.65t-1.89-46.65q-1.88-22.58-6.42-47.2H375.23q-4.54 24.62-6.42 47.2-1.89 22.57-1.89 46.65t1.89 46.65q1.88 22.58 6.42 47.2Zm249.54 0h161.38q6.54-20.77 10.2-45.27Q800-455.92 800-480t-3.65-48.58q-3.66-24.5-10.2-45.27H624.77q4.54 24.62 6.42 47.97 1.89 23.34 1.89 45.88 0 22.54-1.89 45.88-1.88 23.35-6.42 47.97Zm-8.31-227.7h153.39Q734.69-690 673.5-736.23q-61.19-46.23-142.58-58.85 28 36.85 50.35 84.27 22.35 47.43 35.19 96.96Zm-231.69 0h190.46q-15.85-56.3-39.08-101.84-23.23-45.54-56.15-84.62-32.92 39.08-56.15 84.62-23.23 45.54-39.08 101.84Zm-194.62 0h153.39q12.84-49.53 35.19-96.96 22.35-47.42 50.35-84.27-82.16 12.62-142.96 59.23-60.81 46.62-95.97 122Z" />
+						</svg> Português</a></p>
+			</div>
 
 			<p class="copyright">&copy; <span id="year"></span> KNURL MASTERING. All rights reserved.</p>
-			<p class="knoll"><a href="https://youtu.be/49p1JVLHUos?t=933" target="_blank">always be knurling</a></p>
+			<p class="knoll"><a href="https://youtu.be/49p1JVLHUos?t=933" target="_blank"># always be knurling</a></p>
 
 			<script>
 				document.getElementById("year").textContent = new Date().getFullYear();
